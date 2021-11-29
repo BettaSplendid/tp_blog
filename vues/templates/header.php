@@ -1,17 +1,17 @@
 <header>
     <h1 id="title">Blog des titans</h1>
     <nav id="nav">
-        <a href="/controller/ArticleController.php?action=show" title="Voir les articles"><i class="far fa-newspaper fa-2x"></i></a>
+        <a href="http://127.0.0.25/controller/ArticleController.php?action=show" title="Voir les articles"><i class="far fa-newspaper fa-2x"></i></a>
         <?php if (isset($_SESSION['id'])) : ?>
-            <a href="/vues/articles/add.php" title="Ajouter un article"><i class="fas fa-plus fa-2x"></i></a>
+            <a href="http://127.0.0.25/vues/articles/add.php" title="Ajouter un article"><i class="fas fa-plus fa-2x"></i></a>
         <?php endif ?>
 
         <?php if (!isset($_SESSION['id'])) : ?>
-            <a href="/vues/account/signup.php" title="S'inscrire"><i class="fas fa-user-lock fa-2x"></i></a>
+            <a href="http://127.0.0.25/vues/account/signup.php" title="S'inscrire"><i class="fas fa-user-lock fa-2x"></i></a>
         <?php endif ?>
 
         <?php if (isset($_SESSION['id'])) : ?>
-            <a href="/vues/account/logout.php" title="Se déconnecter"><i class="fas fa-sign-out-alt fa-2x"></i></a>
+            <a href="http://127.0.0.25/vues/account/logout.php" title="Se déconnecter"><i class="fas fa-sign-out-alt fa-2x"></i></a>
             <span class="pseudo-blue"><?= $_SESSION['pseudo'] ?></span>
         <?php endif ?>
     </nav>
@@ -22,18 +22,18 @@
         </div>
         <div id="nav-mobile_item">
             <ul>
-                <li><a href="/controller/ArticleController.php?action=show"><i class="far fa-newspaper fa-2x"></i></a></li>
+                <li><a href="http://127.0.0.25/controller/ArticleController.php?action=show"><i class="far fa-newspaper fa-2x"></i></a></li>
                 <?php if (isset($_SESSION['id'])) : ?>
-                    <li><a href="/vues/articles/add.php" title="Ajouter un article"><i class="fas fa-plus fa-2x"></i></a></li>
+                    <li><a href="http://127.0.0.25/vues/articles/add.php" title="Ajouter un article"><i class="fas fa-plus fa-2x"></i></a></li>
                 <?php endif ?>
 
                 <?php if (!isset($_SESSION['id'])) : ?>
                     <li><a href="">&nbsp;</a></li>
-                    <li><a href="/vues/account/signup.php" title="S'inscrire"><i class="fas fa-user-lock fa-2x"></i></a></li>
+                    <li><a href="http://127.0.0.25/vues/account/signup.php" title="S'inscrire"><i class="fas fa-user-lock fa-2x"></i></a></li>
                 <?php endif ?>
                     <li><a href="">&nbsp;</a></li>
                 <?php if (isset($_SESSION['id'])) : ?>
-                    <li><a href="/vues/account/logout.php" title="Se déconnecter"><i class="fas fa-sign-out-alt fa-2x"></i></a> &nbsp;&nbsp;  <span class="pseudo-blue"><?= $_SESSION['pseudo'] ?></span></li>
+                    <li><a href="http://127.0.0.25/vues/account/logout.php" title="Se déconnecter"><i class="fas fa-sign-out-alt fa-2x"></i></a> &nbsp;&nbsp;  <span class="pseudo-blue"><?= $_SESSION['pseudo'] ?></span></li>
                     
                 <?php endif ?>
             </ul>

@@ -62,7 +62,7 @@ function comparePassword($aDatas, $password) {
     global $error;
 
     if(!isset($aDatas['password'])) {
-        $error["message"] = "L’adresse e-mail que vous avez saisie n’est pas associée à un compte. <a href='/vues/account/signup.php'>Céer votre compte</a>";
+        $error["message"] = "L’adresse e-mail que vous avez saisie n’est pas associée à un compte. <a href='http://127.0.0.25/vues/account/signup.php'>Céer votre compte</a>";
         $error["exist"] = true;
 
         return $error;

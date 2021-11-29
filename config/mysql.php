@@ -1,16 +1,18 @@
 <?php
 $username = "root";
-$password = "root"; 
+$password = ""; 
 $host = "localhost"; //localhost 
-$db = "blog";
-$port = "8889";
+$db = "tp_blog";
+$port = "3306";
 
 $option = [
     \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
     \PDO::ERRMODE_EXCEPTION => TRUE,
 ];
 
+// $dsn = "mysql:host=$host;dbname=$db;charset=utf8;port=$port";
 $dsn = "mysql:host=$host;dbname=$db;charset=utf8;port=$port";
+
 
 try {
     $connexion = new \PDO($dsn, $username, $password, $option);

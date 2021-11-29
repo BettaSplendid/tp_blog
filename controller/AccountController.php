@@ -44,7 +44,7 @@ function signUp(): void
         );
 
         if ($isValid['exist']) {
-            redirect($domaine . "/vues/account/signup.php?error=". $isValid["message"]);
+            redirect($domaine . "http://127.0.0.25/vues/account/signup.php?error=". $isValid["message"]);
         }
 
         redirect($domaine . "/vues/account/successfully.php");
