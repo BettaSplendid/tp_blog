@@ -1,0 +1,29 @@
+aside {
+    background-color: blue;
+}
+
+footer {
+    background-color: blueviolet;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: turquoise;
+}
+
+#main {
+    display: flex;
+}
+
+#nav {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#page {
+    display: flex;
+    flex-flow: column nowrap;
+}
